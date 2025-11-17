@@ -1,0 +1,10 @@
+/* Layout fluid helper */
+.container-fluid {
+	width: 100%;
+	max-width: 1800px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: clamp(1rem, 2vw, 2.5rem);
+	padding-right: clamp(1rem, 2vw, 2.5rem);
+}
+@import "tailwindcss";
