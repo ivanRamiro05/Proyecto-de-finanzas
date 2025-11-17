@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Activate virtual environment
-source /opt/venv/bin/activate
-
 # Run migrations
 python manage.py migrate --noinput
 
