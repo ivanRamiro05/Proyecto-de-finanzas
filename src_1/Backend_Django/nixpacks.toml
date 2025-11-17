@@ -8,7 +8,7 @@ nixPkgs = ["python312", "postgresql"]
 cmds = ["python3 -m pip install --upgrade pip", "python3 -m pip install -r requirements.txt"]
 
 [phases.build]
-cmds = ["python3 manage.py collectstatic --noinput"]
+cmds = ["chmod +x start.sh"]
 
 [start]
-cmd = "python3 manage.py migrate && gunicorn backend.wsgi --bind 0.0.0.0:$PORT"
+cmd = "./start.sh"
